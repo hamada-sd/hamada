@@ -1,0 +1,15 @@
+[12-May-2025 23:38:22 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "php" in /home/shanadeq-files/htdocs/files.shanadeq.com/includes/db.php:1
+Stack trace:
+#0 /home/shanadeq-files/htdocs/files.shanadeq.com/dashboard.php(130): require()
+#1 {main}
+  thrown in /home/shanadeq-files/htdocs/files.shanadeq.com/includes/db.php on line 1
+[13-May-2025 04:58:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'folder_id' doesn't have a default value in /home/shanadeq-files/htdocs/files.shanadeq.com/upload.php:41
+Stack trace:
+#0 /home/shanadeq-files/htdocs/files.shanadeq.com/upload.php(41): PDOStatement->execute()
+#1 {main}
+  thrown in /home/shanadeq-files/htdocs/files.shanadeq.com/upload.php on line 41
+[13-May-2025 05:00:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: 1364 Field 'folder_id' doesn't have a default value in /home/shanadeq-files/htdocs/files.shanadeq.com/upload.php:41
+Stack trace:
+#0 /home/shanadeq-files/htdocs/files.shanadeq.com/upload.php(41): PDOStatement->execute()
+#1 {main}
+  thrown in /home/shanadeq-files/htdocs/files.shanadeq.com/upload.php on line 41

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل الإلكتروني</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+aside {
+    width: 25%;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside ol {
+    padding-right: 20px;
+}
+
+aside ol li {
+    margin: 10px 0;
+}
+
+.form-section {
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+    text-align: center;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section label {
+    font-weight: bold;
+}
+
+.form-section input,
+.form-section select,
+.form-section button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-section button {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #00509e;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="وزارة التعليم" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">الخدمات</a></li>
+                <li><a href="#">التواصل</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2>خطوات التسجيل</h2>
+            <ol>
+                <li><a href="#">الخطوة 1: إدخال البيانات</a></li>
+                <li><a href="#">الخطوة 2: اختيار المدرسة</a></li>
+                <li><a href="#">الخطوة 3: تأكيد الطلب</a></li>
+            </ol>
+        </aside>
+        <section class="form-section">
+            <h1>نموذج التسجيل</h1>
+            <form action="#" method="POST">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="dob">تاريخ الميلاد:</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="school">اختيار المدرسة:</label>
+                <select id="school" name="school" required>
+                    <option value="school1">مدرسة 1</option>
+                    <option value="school2">مدرسة 2</option>
+                    <option value="school3">مدرسة 3</option>
+                </select>
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2025 وزارة التعليم</p>
+    </footer>
+</body>
+</html>
